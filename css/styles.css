@@ -6,6 +6,9 @@
   .row:after, .search-container:after {
     clear: both; }
 
+.background-dark-green {
+  background-color: #33b06c !important; }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -434,6 +437,12 @@ h1, h2, h3, h4, h5, h6 {
 ::-moz-selection {
   background-color: #3ccf80; }
 
+.larger-text {
+  font-size: 18px; }
+
+.center-text {
+  text-align: center; }
+
 .wrapper {
   max-width: 90%;
   margin: 0 auto; }
@@ -822,6 +831,75 @@ section.lead {
       width: 90%; }
     @media only screen and (min-width: 992px) {
       .search-container.full-width {
-        display: none; } }
+        display: none; }
+        .search-container.full-width.desktop-visible {
+          display: block;
+          max-width: 100%; }
+          .search-container.full-width.desktop-visible h2 span {
+            font-weight: normal; } }
+
+.icon-card {
+  margin-top: 80px;
+  min-height: 200px;
+  background-color: #fff;
+  position: relative;
+  min-height: 350px; }
+  .icon-card h1 {
+    margin-top: 50px; }
+  .icon-card p {
+    margin-bottom: 20px; }
+  .icon-card .icon {
+    background-color: #3ccf80;
+    border-radius: 50%;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: absolute;
+    top: -52px;
+    left: 50%;
+    transform: translateX(-50%); }
+    .icon-card .icon img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+
+.stat h1 {
+  color: #3ccf80;
+  font-size: 60px; }
+.stat p {
+  font-size: 20px; }
+  .stat p em {
+    font-size: 16px; }
+
+.schedule-card {
+  background-color: #fff;
+  margin-bottom: 30px;
+  padding: 0; }
+  .schedule-card img {
+    width: 100%; }
+  .schedule-card h2, .schedule-card p {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .schedule-card p {
+    padding-bottom: 20px; }
+  @media only screen and (min-width: 992px) {
+    .schedule-card {
+      min-height: 442px; } }
+
+section.cards {
+  background-color: #f4f4f4;
+  padding-bottom: 50px; }
+  section.cards .row {
+    max-width: 1400px;
+    margin: 0 auto; }
+
+section.the-schedule {
+  background-color: #f4f4f4; }
+  section.the-schedule .row {
+    max-width: 1000px;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=styles.css.map */

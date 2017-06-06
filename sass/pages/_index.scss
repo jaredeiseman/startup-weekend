@@ -1,0 +1,16 @@
+section.cards {
+  background-color: $lighter-secondary-color;
+  padding-bottom: 50px;
+  .row {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+section.the-schedule {
+  background-color: $lighter-secondary-color;
+  .row {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}

@@ -47,6 +47,13 @@
 
     @include desktop-breakpoint {
       display: none;
+      &.desktop-visible {
+        display: block;
+        max-width: 100%;
+        h2 span {
+          font-weight: normal;
+        }
+      }
     }
   }
 }
