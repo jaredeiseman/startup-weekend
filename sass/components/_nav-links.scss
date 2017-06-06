@@ -1,0 +1,40 @@
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  display: none;
+  color: $black;
+  height: 50px;
+  float: right;
+  position: relative;
+
+  @include desktop-breakpoint {
+    display: inline-block;
+    color: $white;
+  }
+}
+.nav-links ul {
+  height: 100%;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+}
+
+.nav-links a {
+    padding: 0 15px;
+  margin-bottom: 10px;
+  display: inline-block;
+  height: 100%;
+  color: $white;
+  text-decoration: none;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, .5);
+  }
+}
+
+.nav-links .help-icon {
+  @include icon('../img/help-icon.png', 30px, 30px);
+}

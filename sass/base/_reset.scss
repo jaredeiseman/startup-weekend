@@ -1,0 +1,22 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: $white;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: $white;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      color: $white;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      color: $white;
+    }

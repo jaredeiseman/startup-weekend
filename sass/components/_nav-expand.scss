@@ -1,0 +1,14 @@
+$menu-icon-width: 35px;
+$menu-icon-height: 35px;
+
+nav .menu-icon {
+  @include icon('../img/menu-icon.png', $menu-icon-height, $menu-icon-width);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+
+  @include desktop-breakpoint {
+    display: none;
+  }
+}

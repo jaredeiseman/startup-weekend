@@ -1,0 +1,23 @@
+// grid vars
+$grid-columns: 12;
+$grid-max-width: 90%;
+$gutter-width: 2%;
+
+// Breakpoint vars
+$tablet-breakpoint: "only screen and (min-width: 600px)";
+$desktop-breakpoint: "only screen and (min-width: 992px)";
+
+// color vars
+$white: #fff;
+$black: #000;
+$font-color: #9a9a9a;
+$primary-color: #3ccf80;
+$darker-primary-color: #33b06c;
+$lighter-secondary-color: #f4f4f4;
+$secondary-color: #808080;
+$darker-secondary-color: #414141;
+$darkest-secondary-color: #262626;
+
+// typography vars
+$header-font-family: 'Montserrat', sans-serif;
+$default-font-family: 'Open Sans', sans-serif;

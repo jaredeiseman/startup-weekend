@@ -1,0 +1,11 @@
+nav .logo {
+  background-image: url(../img/logo-black.svg);
+  background-size: 290px 50px;
+  width: 290px;
+  height: 50px;
+  display: inline-block;
+  float: left;
+  @include desktop-breakpoint {
+    background-image: url(../img/logo-white.svg);
+  }
+}

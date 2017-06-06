@@ -1,0 +1,38 @@
+.wrapper {
+  max-width: $grid-max-width;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  display: block;
+  @extend %clearfix;
+}
+
+[class*='col-'] {
+  float: left;
+  padding: 1em;
+  width: 100%;
+  min-height: 1px;
+}
+
+@include tablet-breakpoint {
+  @for $index from 1 through $grid-columns {
+    .col-md-#{$index} {
+      width: 100% / $grid-columns * $index - $gutter-width;
+      margin-left: $gutter-width / 2;
+      margin-right: $gutter-width / 2;
+      background-color: green;
+    }
+  }
+}
+
+@include desktop-breakpoint {
+  @for $index from 1 through $grid-columns {
+    .col-lg-#{$index} {
+      width: 100% / $grid-columns * $index - $gutter-width;
+      margin-left: $gutter-width / 2;
+      margin-right: $gutter-width / 2;
+    }
+  }
+}
