@@ -16,13 +16,20 @@
   min-height: 1px;
 }
 
+@for $index from 1 through $grid-columns {
+  .col-sm-#{$index} {
+    width: 100% / $grid-columns * $index - $gutter-width;
+    margin-left: $gutter-width / 2;
+    margin-right: $gutter-width / 2;
+  }
+}
+
 @include tablet-breakpoint {
   @for $index from 1 through $grid-columns {
     .col-md-#{$index} {
       width: 100% / $grid-columns * $index - $gutter-width;
       margin-left: $gutter-width / 2;
       margin-right: $gutter-width / 2;
-      background-color: green;
     }
   }
 }

@@ -8,6 +8,7 @@ section.lead {
   padding-top: 50px;
   padding-bottom: 70px;
   color: $white;
+  text-align: center;
 
   @include tablet-breakpoint {
     height: 400px;

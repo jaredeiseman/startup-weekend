@@ -1,0 +1,52 @@
+.search-container {
+  background-color: $primary-color;
+  color: $white;
+  border-radius: 5px;
+  @extend %clearfix;
+  display: none;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+  max-width: 1200px;
+
+  h2 {
+    display: inline-block;
+  }
+
+  form {
+    width: 70%;
+    margin: 0 auto;
+    display: inline-block;
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @include desktop-breakpoint {
+    display: inline-block;
+
+    button {
+      margin-left: 50px;
+    }
+  }
+
+  &.full-width {
+    display: block;
+    border-radius: 0;
+    width: 100%;
+
+    form {
+      width: 90%;
+    }
+
+    @include desktop-breakpoint {
+      display: none;
+    }
+  }
+}

@@ -8,50 +8,71 @@
   </head>
   <body style="width:100%;">
 
-      <div class="header">
-        <nav>
-          <div class="logo"></div>
-          <div class="navigation"></div>
-          <div class="nav-links">
-            <ul>
-              <li><a href="#">Explore Events</a></li>
-              <li><a href="#">More</a></li>
-              <a href="#"><li class="help-icon"></li></a>
-            </ul>
+    <div class="header">
+      <nav>
+        <div class="logo"></div>
+        <div class="navigation"></div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#">Explore Events</a></li>
+            <li><a href="#">More</a></li>
+            <a href="#"><li class="help-icon"></li></a>
+          </ul>
+        </div>
+        <span class="menu-icon"></span>
+        <div class="search-bar">
+          <form>
+            <div class="search-bar-container">
+              <label for="nav-search">Find an Event:</label>
+              <input type="text" placeholder="United States" id="nav-search">
+              <button class="search-submit"></button>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <section class="lead">
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-lg-1">
+
           </div>
-          <span class="menu-icon"></span>
-          <div class="search-bar">
+          <div class="col-12 col-lg-10">
+            <h1>Learn, Network, Setup</h1>
+            <p>
+              In just 54 hours, you will experience the highs, lows, fun, and pressure that make up life at a startup. As you learn how to create a real company, you'll meet the very best mentors, investors, cofounders, and sponsors who are ready to help you get started. Your community is here to help you — find an event today!
+            </p>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="search-container">
+            <h2>Find an Event Near:</h2>
             <form>
-              <div class="search-bar-container">
-                <label for="nav-search">Find an Event:</label>
-                <input type="text" placeholder="United States" id="nav-search">
-                <button class="search-submit"></button>
-              </div>
+              <input type="text" class="search-input" placeholder="United States">
+              <button type="button" name="button" class="go-button">Go!</button>
             </form>
           </div>
-        </nav>
-      </div>
-
-      <section class="lead">
-        <div class="wrapper">
-          <div class="row">
-            <div class="col-12">
-              <h1>Learn, Network, Setup</h1>
-              <p>
-                In just 54 hours, you will experience the highs, lows, fun, and pressure that make up life at a startup. As you learn how to create a real company, you'll meet the very best mentors, investors, cofounders, and sponsors who are ready to help you get started. Your community is here to help you — find an event today!
-              </p>
-            </div>
-            <div class="col-lg-4">
-              <h1>Find an Event Near:</h1>
-            </div>
-            <div class="col-lg-5">
-              <input type="text" class="search-input" placeholder="United States">
-            </div>
-            <div class="col-lg-3">
-              <button type="button" name="button" class="go-button">Go!</button>
-            </div>
-          </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <div class="row">
+      <div class="search-container full-width">
+        <div class="col-sm-12">
+          <h2>Find an Event Near:</h2>
+        </div>
+        <form>
+          <input type="text" class="search-input" placeholder="United States">
+          <button type="button" name="button" class="go-button">Go!</button>
+        </form>
+        <div class="col-sm-12">
+          <p>
+            <a href="#">Or use my current location</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
